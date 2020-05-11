@@ -3,6 +3,7 @@ from blog.models import Post, Category
 
 class PostAdmin(admin.ModelAdmin):
     list_display = ('title', 'body', 'created_on','last_modified',)
+    #   list_display = ('title', 'slug', 'author','updated_on', 'content', 'created_on', 'status',)
     pass
 
 class CategoryAdmin(admin.ModelAdmin):
