@@ -10,8 +10,9 @@ class Post(models.Model):
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     last_modified = models.DateTimeField(auto_now=True)
-    categories = models.ManyToManyField('Category', related_name='posts')
-def __str1__(self):
+    categories = models.ManyToManyField('Category', related_name='posts',)
+    print(categories, 'NAME')
+def __str__(self):
     return self.title
 
 class Comment(models.Model):
